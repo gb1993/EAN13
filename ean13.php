@@ -19,4 +19,3 @@ function IncluiDigito($ean) {
     }
     return $ean;
 }
-?>
