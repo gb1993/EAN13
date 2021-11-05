@@ -38,7 +38,7 @@
             <form method="post" action="checkean.php">
                 <h2>Gerador de código de barras</h2>
                 <p>Código do Produto<input type="text" name="idproduto" maxlength ="5" required/></p>
-                <p>Nome do Produto<input type="text" name="descricao" required/></p>
+                <p>Nome do Produto<input type="text" name="descricao"/></p>
                 <input type="submit" name="gerar" value="Gerar"/>
                 <p><a href="signout.php">Sair do Sistema</a></p>
             </form>

@@ -8,7 +8,7 @@
     include_once("ean13.php");
 
     $user_input = filter_input_array(INPUT_POST, FILTER_DEFAULT);
-    if(!empty($user_input['gerar']) && !empty($user_input['idproduto']) && !empty($user_input['descricao'])){
+    if(!empty($user_input['gerar']) && !empty($user_input['idproduto'])){
         $find_produtc = "SELECT * FROM produtos WHERE idproduto = :idproduto";
         $result_product = $conn -> prepare($find_produtc);
         $result_product -> bindParam(':idproduto', $user_input['idproduto']);
